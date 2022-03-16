@@ -1,0 +1,4 @@
+Server started
+Client Data
+<user>NANJESH</user> <bal>1000</bal> <oper>D</oper> <DepAmt>100</DepAmt>
+Response <TotalBalanceAmount>1100</TotalBalanceAmount>

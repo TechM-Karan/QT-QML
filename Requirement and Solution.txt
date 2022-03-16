@@ -1,0 +1,30 @@
+Requirement:
+Implement a 2 way real time communication system (between QT application and test server instance). 
+This should enable updating values instantaneously on client or server and the update values should reflect immediately.
+
+Solution:
+Server : Local host and port 12345
+I have designed an ATM Server where client wants to deposit the amount from the ATM and gets the balance after the depoist
+from the server.During the operation I will log the user operation to a file(username.txt) and server operation to file ( server.txt)
+Currently I made the input field as fixed
+Field 1 : UserName;
+Field 2 : Total Balance Amount
+Field 3 : Deposit
+Field 4 : Deposit Amount.
+
+I am passing Total balance Amount from input because i am not storing the total balance Amount in server.
+Response from the server i will get the total balance amount after the operation deposit and deposit amount.
+
+Input request from client:
+<user>NANJESH</user> <bal>1000</bal> <oper>D</oper> <DepAmt>100</DepAmt>
+NANJESH.TXT file is created maintain user input and response from server.
+
+output response from server:
+Response <TotalBalanceAmount>1100</TotalBalanceAmount>
+SERVER.TXT file is created to maintain server operation
+
+Enhnacement:
+since the requirement says client I have implemented with single client later this can be enhanced with multiple clients.
+
+
+
